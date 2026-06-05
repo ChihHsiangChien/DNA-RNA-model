@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    sodipodi:docname="DNA2.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,12 +24,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.3558782"
-     inkscape:cx="223.4714"
-     inkscape:cy="686.27107"
+     inkscape:cx="169.26299"
+     inkscape:cy="406.74745"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -38,6 +38,53 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
+       id="rect543-5"
+       width="84.338028"
+       height="32.759621"
+       x="19.952599"
+       y="243.9617"
+       inkscape:export-filename="RNA-C.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:#cccccc;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
+       id="rect685"
+       width="84.338028"
+       height="32.759621"
+       x="19.952599"
+       y="145.68286"
+       inkscape:export-filename="RNA-U.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:#cccccc;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
+       id="rect581-7"
+       width="84.338028"
+       height="32.759621"
+       x="19.952599"
+       y="243.9617" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
+       id="rect542"
+       width="84.338028"
+       height="32.759621"
+       x="19.952599"
+       y="112.92324"
+       inkscape:export-filename="DNA-T.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
+       id="rect581"
+       width="84.338028"
+       height="32.759621"
+       x="19.952599"
+       y="80.163605"
+       inkscape:export-filename="rect581.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
        id="rect668"
@@ -55,7 +102,7 @@
        height="32.759621"
        x="19.952599"
        y="14.644364"
-       inkscape:export-filename="A.png"
+       inkscape:export-filename="DNA-A.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <ellipse
@@ -144,7 +191,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927776,45.574152 10.826312,-8.50235"
+       d="M 30.757031,46.720588 41.754088,37.071802"
        id="path270"
        sodipodi:nodetypes="cc" />
     <path
@@ -371,7 +418,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="M 30.927776,78.333775 41.754088,69.831424"
+       d="m 30.952168,79.57778 10.80192,-9.746356"
        id="path675"
        sodipodi:nodetypes="cc" />
     <path
@@ -592,24 +639,24 @@
     <text
        xml:space="preserve"
        style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="41.796116"
-       y="31.216028"
+       x="42.006462"
+       y="30.042774"
        id="text728"
        transform="scale(1.000284,0.99971609)"><tspan
          sodipodi:role="line"
          id="tspan727"
          style="font-size:3.52778px;stroke-width:0.761999"
-         x="41.796116"
-         y="31.216028">去氧</tspan><tspan
+         x="42.006462"
+         y="30.042774">去氧</tspan><tspan
          sodipodi:role="line"
          style="font-size:3.52778px;stroke-width:0.761999"
-         x="41.796116"
-         y="36.027847"
+         x="42.006462"
+         y="34.854591"
          id="tspan542">核糖</tspan><tspan
          sodipodi:role="line"
          style="text-align:center;text-anchor:middle;stroke-width:0.761999"
-         x="41.796116"
-         y="39.053093"
+         x="42.006462"
+         y="37.879837"
          id="tspan728" /></text>
     <ellipse
        style="fill:#f9f9f9;stroke:none;stroke-width:0.564996;stroke-dasharray:none;stroke-dashoffset:0"
@@ -691,11 +738,6 @@
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="M 61.221014,66.029813 51.831809,62.3869"
        id="path743"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="M 30.927776,78.333775 41.754088,69.831424"
-       id="path744"
        sodipodi:nodetypes="cc" />
     <ellipse
        style="fill:#f9f9f9;stroke:none;stroke-width:0.564996;stroke-dasharray:none;stroke-dashoffset:0"
@@ -823,49 +865,29 @@
          y="64.379852">Guanine</tspan></text>
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 96.064244,28.958934 6.853726,-2.070392"
+       d="m 96.064244,28.958934 7.944236,-2.375655"
        id="path530"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 97.34072,38.542747 6.00856,-1.760738"
+       d="m 97.34072,38.542747 6.62623,-1.90781"
        id="path534"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 93.921703,55.879197 9.575697,-1.65809"
+       d="M 93.921703,55.879197 104.35113,54.050361"
        id="path536"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 94.956578,64.79414 8.293912,-1.301364"
+       d="m 94.956578,64.79414 8.842732,-1.520894"
        id="path538"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 93.921703,75.23546 9.407067,-1.54478"
+       d="M 93.921703,75.23546 104.30446,73.495542"
        id="path540"
        sodipodi:nodetypes="cc" />
-    <rect
-       style="fill:#f9f9f9;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
-       id="rect542"
-       width="84.338028"
-       height="32.759621"
-       x="19.952599"
-       y="112.92324"
-       inkscape:export-filename="T.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
-       id="rect543"
-       width="84.338028"
-       height="32.759621"
-       x="19.952599"
-       y="80.163605"
-       inkscape:export-filename="C.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
     <ellipse
        style="fill:#cccccc;stroke:none;stroke-width:0.836147;stroke-dasharray:none"
        id="ellipse543"
@@ -947,16 +969,6 @@
          y="87.978409">-</tspan></text>
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 62.008071,93.833821 -10.17625,1.3127"
-       id="path548"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927795,111.0934 10.8263,-8.50235"
-       id="path549"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 36.673535,87.805781 0.22376,4.71683 2.40321,2.72649"
        id="path550"
        sodipodi:nodetypes="ccc" />
@@ -1015,23 +1027,6 @@
        inkscape:transform-center-x="-0.041342925"
        inkscape:transform-center-y="1.5204636"
        transform="matrix(0.20868032,0,0,0.20856186,163.23682,75.130934)" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
-       x="43.685726"
-       y="90.429359"
-       id="text557"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan557"
-         style="fill:#000000;stroke-width:0.295249"
-         x="43.685726"
-         y="90.429359">O</tspan></text>
-    <path
-       id="path557"
-       style="fill:#cccccc;stroke:#000000;stroke-width:0.761999"
-       d="m 62.276691,102.63835 2.86871,-9.336039 9.00127,0.10187 6.334599,-7.04475 9.67273,2.0025 2.57798,8.95251 -6.37065,6.739799 -9.247139,-1.62535 -6.76953,5.54801 z"
-       sodipodi:nodetypes="cccccccccc" />
     <ellipse
        style="fill:#f9f9f9;stroke:none;stroke-width:0.564996;stroke-dasharray:none;stroke-dashoffset:0"
        id="ellipse557"
@@ -1058,32 +1053,6 @@
          style="fill:#000000;stroke-width:0.295249"
          x="66.810081"
          y="90.616455">N</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
-       x="79.263809"
-       y="101.08219"
-       id="text559"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan559"
-         style="fill:#000000;stroke-width:0.295249"
-         x="79.263809"
-         y="101.08219">N</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
-       x="77.396172"
-       y="110.54897"
-       id="text561"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan561"
-         style="fill:#000000;stroke-width:0.295249"
-         x="77.396172"
-         y="110.54897">NH<tspan
-   style="font-size:2.35367px;baseline-shift:sub;stroke-width:0.295249"
-   id="tspan560">2</tspan></tspan></text>
     <ellipse
        style="fill:#cccccc;stroke:none;stroke-width:0.836147;stroke-dasharray:none"
        id="ellipse561"
@@ -1165,16 +1134,6 @@
          y="120.74734">-</tspan></text>
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 61.221021,131.54906 -9.3892,-3.64291"
-       id="path567"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927795,143.85302 10.8263,-8.50235"
-       id="path568"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 36.673535,120.5654 0.22376,4.71683 2.40321,2.72649"
        id="path569"
        sodipodi:nodetypes="ccc" />
@@ -1198,23 +1157,6 @@
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 30.229725,123.65634 v -1.37663"
        id="path574" />
-    <text
-       xml:space="preserve"
-       style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="41.210842"
-       y="129.62041"
-       id="text575"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan574"
-         style="stroke-width:0.761999"
-         x="41.210842"
-         y="129.62041">去氧核糖</tspan><tspan
-         sodipodi:role="line"
-         style="text-align:center;text-anchor:middle;stroke-width:0.761999"
-         x="41.210842"
-         y="132.10973"
-         id="tspan575" /></text>
     <path
        sodipodi:type="star"
        style="fill:none;stroke:#000000;stroke-width:2.70825;stroke-dasharray:none;stroke-dashoffset:0"
@@ -1233,37 +1175,6 @@
        inkscape:transform-center-x="-0.041342925"
        inkscape:transform-center-y="1.5204606"
        transform="matrix(0.20868032,0,0,0.20856186,163.23682,107.89055)" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
-       x="43.685726"
-       y="123.19829"
-       id="text576"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan576"
-         style="fill:#000000;stroke-width:0.295249"
-         x="43.685726"
-         y="123.19829">O</tspan></text>
-    <ellipse
-       style="fill:#f9f9f9;stroke:none;stroke-width:0.564996;stroke-dasharray:none;stroke-dashoffset:0"
-       id="ellipse576"
-       cx="69.535049"
-       cy="117.97073"
-       rx="2.0069847"
-       ry="2.0451756" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#000000;stroke-width:0.295249;-inkscape-stroke:none"
-       x="68.090981"
-       y="119.23937"
-       id="text577"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan577"
-         style="fill:#000000;stroke:#000000;stroke-width:0.295249"
-         x="68.090981"
-         y="119.23937">N</tspan></text>
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 61.610571,95.860321 2.96751,9.024719"
@@ -1271,33 +1182,9 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 60.710801,106.02682 -5.68022,-4.00601"
-       id="path578"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 75.529471,91.531001 -5.59937,-1.22249"
        id="path579"
        sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 77.009361,108.25547 -3.18413,-1.74508"
-       id="path580"
-       sodipodi:nodetypes="cc" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
-       id="rect580"
-       width="84.338028"
-       height="32.759621"
-       x="19.952599"
-       y="112.92324" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
-       id="rect581"
-       width="84.338028"
-       height="32.759621"
-       x="19.952599"
-       y="80.163605" />
     <ellipse
        style="fill:#cccccc;stroke:none;stroke-width:0.836147;stroke-dasharray:none"
        id="ellipse581"
@@ -1384,7 +1271,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927795,111.0934 10.8263,-8.50235"
+       d="m 30.757049,112.26423 10.997046,-9.67318"
        id="path587"
        sodipodi:nodetypes="cc" />
     <path
@@ -1446,14 +1333,14 @@
        xml:space="preserve"
        style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
        x="78.631523"
-       y="102.20321"
+       y="102.03068"
        id="text596"
        transform="scale(1.000284,0.99971609)"><tspan
          sodipodi:role="line"
          id="tspan596"
          style="fill:#000000;stroke-width:0.295249"
          x="78.631523"
-         y="102.20321">N</tspan></text>
+         y="102.03068">N</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
@@ -1554,7 +1441,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927795,143.85302 10.8263,-8.50235"
+       d="m 30.805834,144.92628 10.948261,-9.57561"
        id="path605"
        sodipodi:nodetypes="cc" />
     <path
@@ -1600,13 +1487,6 @@
        inkscape:transform-center-x="-0.041342925"
        inkscape:transform-center-y="1.5204606"
        transform="matrix(0.20868032,0,0,0.20856186,163.23682,107.89055)" />
-    <ellipse
-       style="fill:#f9f9f9;stroke:none;stroke-width:0.564996;stroke-dasharray:none;stroke-dashoffset:0"
-       id="ellipse613"
-       cx="69.535049"
-       cy="117.97073"
-       rx="2.0069847"
-       ry="2.0451756" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 63.042821,96.282871 1.95848,8.004469"
@@ -1655,12 +1535,12 @@
          y="91.475525">O</tspan></text>
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 80.8505,90.510971 -3.368259,0.9194"
+       d="m 80.8505,90.510971 -3.10954,0.953896"
        id="path616"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 81.29333,91.544211 -3.368249,0.9194"
+       d="m 81.29333,91.544211 -3.178522,0.902152"
        id="path617"
        sodipodi:nodetypes="cc" />
     <ellipse
@@ -1819,94 +1699,72 @@
          id="tspan630" /></text>
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="M 103.51274,134.08831 90.61963,137.9831"
+       d="M 103.87047,133.91068 90.61963,137.9831"
        id="path630"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 102.77013,124.26662 -11.32519,3.31872"
+       d="m 103.79951,123.93253 -12.35457,3.65281"
        id="path631"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 102.73767,106.51236 -15.93215,2.75875"
+       d="m 103.89615,106.32018 -17.09063,2.95093"
        id="path632"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="M 102.76815,97.248781 83.58574,100.35031"
+       d="M 103.89535,96.928977 83.58574,100.35031"
        id="path633"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 104.032,86.836961 -19.23298,3.15834"
+       d="M 103.87955,86.855255 84.79902,89.995301"
        id="path634"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="42.012978"
-       y="63.25581"
+       x="42.006462"
+       y="62.811695"
        id="text636"
        transform="scale(1.000284,0.99971609)"><tspan
          sodipodi:role="line"
          id="tspan634"
          style="font-size:3.52778px;stroke-width:0.761999"
-         x="42.012978"
-         y="63.25581">去氧</tspan><tspan
+         x="42.006462"
+         y="62.811695">去氧</tspan><tspan
          sodipodi:role="line"
          style="font-size:3.52778px;stroke-width:0.761999"
-         x="42.012978"
-         y="68.067627"
+         x="42.006462"
+         y="67.623512"
          id="tspan635">核糖</tspan><tspan
          sodipodi:role="line"
          style="text-align:center;text-anchor:middle;stroke-width:0.761999"
-         x="42.012978"
-         y="71.092873"
+         x="42.006462"
+         y="70.648758"
          id="tspan636" /></text>
     <text
        xml:space="preserve"
        style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="41.861168"
-       y="96.543663"
-       id="text639"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan637"
-         style="font-size:3.52778px;stroke-width:0.761999"
-         x="41.861168"
-         y="96.543663">去氧</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:3.52778px;stroke-width:0.761999"
-         x="41.861168"
-         y="101.24696"
-         id="tspan638">核糖</tspan><tspan
-         sodipodi:role="line"
-         style="text-align:center;text-anchor:middle;stroke-width:0.761999"
-         x="41.861168"
-         y="104.27221"
-         id="tspan639" /></text>
-    <text
-       xml:space="preserve"
-       style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="41.837498"
-       y="129.21458"
+       x="42.006474"
+       y="128.34955"
        id="text642"
        transform="scale(1.000284,0.99971609)"><tspan
          sodipodi:role="line"
          id="tspan640"
          style="font-size:3.52778px;stroke-width:0.761999"
-         x="41.837498"
-         y="129.21458">去氧</tspan><tspan
+         x="42.006474"
+         y="128.34955">去氧</tspan><tspan
          sodipodi:role="line"
          style="font-size:3.52778px;stroke-width:0.761999"
-         x="41.837498"
-         y="133.91788"
+         x="42.006474"
+         y="133.16136"
          id="tspan641">核糖</tspan><tspan
          sodipodi:role="line"
          style="text-align:center;text-anchor:middle;stroke-width:0.761999"
-         x="41.837498"
-         y="136.94313"
+         x="42.006474"
+         y="136.18661"
          id="tspan642" /></text>
     <text
        xml:space="preserve"
@@ -1996,16 +1854,6 @@
          style="font-size:14.1111px;stroke-width:0.565"
          x="55.787235"
          y="125.78593">T</tspan></text>
-    <rect
-       style="fill:#f9f9f9;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
-       id="rect650"
-       width="84.338028"
-       height="32.759621"
-       x="19.952599"
-       y="145.68286"
-       inkscape:export-filename="RNA-U.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
     <ellipse
        style="fill:#cccccc;stroke:none;stroke-width:0.836147;stroke-dasharray:none"
        id="ellipse650"
@@ -2087,16 +1935,6 @@
          y="153.51627">-</tspan></text>
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 61.221021,164.30869 -9.3892,-3.64291"
-       id="path657"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927795,176.61265 10.8263,-8.50235"
-       id="path658"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 36.673535,153.32503 0.22376,4.71683 2.40321,2.72649"
        id="path659"
        sodipodi:nodetypes="ccc" />
@@ -2120,23 +1958,6 @@
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 30.229725,156.41597 v -1.37663"
        id="path666" />
-    <text
-       xml:space="preserve"
-       style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="41.210842"
-       y="162.38934"
-       id="text676"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan675"
-         style="stroke-width:0.761999"
-         x="41.210842"
-         y="162.38934">去氧核糖</tspan><tspan
-         sodipodi:role="line"
-         style="text-align:center;text-anchor:middle;stroke-width:0.761999"
-         x="41.210842"
-         y="164.87866"
-         id="tspan676" /></text>
     <path
        sodipodi:type="star"
        style="fill:none;stroke:#000000;stroke-width:2.70825;stroke-dasharray:none;stroke-dashoffset:0"
@@ -2155,44 +1976,6 @@
        inkscape:transform-center-x="-0.041342925"
        inkscape:transform-center-y="1.5204606"
        transform="matrix(0.20868032,0,0,0.20856186,163.23682,140.65018)" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
-       x="43.685726"
-       y="155.96721"
-       id="text684"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan684"
-         style="fill:#000000;stroke-width:0.295249"
-         x="43.685726"
-         y="155.96721">O</tspan></text>
-    <ellipse
-       style="fill:#f9f9f9;stroke:none;stroke-width:0.564996;stroke-dasharray:none;stroke-dashoffset:0"
-       id="ellipse684"
-       cx="69.535049"
-       cy="150.73035"
-       rx="2.0069847"
-       ry="2.0451756" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#000000;stroke-width:0.295249;-inkscape-stroke:none"
-       x="68.090981"
-       y="152.0083"
-       id="text685"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan685"
-         style="fill:#000000;stroke:#000000;stroke-width:0.295249"
-         x="68.090981"
-         y="152.0083">N</tspan></text>
-    <rect
-       style="fill:#cccccc;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
-       id="rect685"
-       width="84.338028"
-       height="32.759621"
-       x="19.952599"
-       y="145.68286" />
     <ellipse
        style="fill:#ececec;stroke:none;stroke-width:0.836147;stroke-dasharray:none"
        id="ellipse685"
@@ -2279,7 +2062,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927795,176.61265 10.8263,-8.50235"
+       d="M 30.903403,177.66152 41.754095,168.1103"
        id="path701"
        sodipodi:nodetypes="cc" />
     <path
@@ -2425,30 +2208,30 @@
          id="tspan779" /></text>
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 103.51274,166.84794 -12.89311,3.89479"
+       d="m 104.19572,166.67719 -13.57609,4.06554"
        id="path787"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 102.77013,157.02625 -11.32519,3.31872"
+       d="m 104.18488,156.58719 -12.73994,3.75778"
        id="path788"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#f9f9f9;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="42.001225"
-       y="164.40109"
+       x="42.026279"
+       y="163.52783"
        id="text791"
        transform="scale(1.000284,0.99971609)"><tspan
          sodipodi:role="line"
          style="font-size:3.52778px;fill:#f9f9f9;stroke:none;stroke-width:0.761999"
-         x="42.001225"
-         y="164.40109"
+         x="42.026279"
+         y="163.52783"
          id="tspan789">核糖</tspan><tspan
          sodipodi:role="line"
          style="text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.761999"
-         x="42.001225"
-         y="167.42635"
+         x="42.026279"
+         y="166.55309"
          id="tspan791" /></text>
     <text
        xml:space="preserve"
@@ -2699,7 +2482,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927776,209.37226 10.826312,-8.50235"
+       d="m 30.903384,210.56748 10.850704,-9.69757"
        id="path270-3"
        sodipodi:nodetypes="cc" />
     <path
@@ -2926,7 +2709,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927776,242.13188 10.826312,-8.50235"
+       d="m 30.805815,243.18075 10.948273,-9.55122"
        id="path675-5"
        sodipodi:nodetypes="cc" />
     <path
@@ -2975,19 +2758,19 @@
     <text
        xml:space="preserve"
        style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#f9f9f9;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="42.111809"
-       y="229.7598"
+       x="42.026272"
+       y="229.06567"
        id="text791-9-6"
        transform="scale(1.000284,0.99971609)"><tspan
          sodipodi:role="line"
          style="font-size:3.52778px;fill:#f9f9f9;stroke:none;stroke-width:0.761999"
-         x="42.111809"
-         y="229.7598"
+         x="42.026272"
+         y="229.06567"
          id="tspan789-7-7">核糖</tspan><tspan
          sodipodi:role="line"
          style="text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.761999"
-         x="42.111809"
-         y="232.78505"
+         x="42.026272"
+         y="232.09093"
          id="tspan791-6-7" /></text>
     <path
        id="path683-8"
@@ -3242,11 +3025,6 @@
        d="m 61.221014,229.82792 -9.389205,-3.64291"
        id="path743-7"
        sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927776,242.13188 10.826312,-8.50235"
-       id="path744-3"
-       sodipodi:nodetypes="cc" />
     <ellipse
        style="fill:#f9f9f9;stroke:none;stroke-width:0.564996;stroke-dasharray:none;stroke-dashoffset:0"
        id="ellipse754-7"
@@ -3373,39 +3151,29 @@
          y="228.22447">Guanine</tspan></text>
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 96.064244,192.75704 6.853726,-2.07039"
+       d="m 94.72267,193.70834 9.48809,-3.38757"
        id="path530-7"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 97.34072,202.34086 6.00856,-1.76074"
+       d="m 96.023539,203.24337 8.179471,-3.10231"
        id="path534-7"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 93.921703,219.67731 9.575697,-1.65809"
+       d="m 93.921703,219.67731 10.307467,-1.9264"
        id="path536-7"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 94.956578,228.59225 8.293912,-1.30136"
+       d="m 94.956578,228.59225 8.903712,-1.54529"
        id="path538-3"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 93.921703,239.03357 9.407067,-1.54478"
+       d="m 93.921703,239.03357 10.309577,-1.76431"
        id="path540-3"
        sodipodi:nodetypes="cc" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
-       id="rect543-5"
-       width="84.338028"
-       height="32.759621"
-       x="19.952599"
-       y="243.9617"
-       inkscape:export-filename="RNA-C.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
     <ellipse
        style="fill:#cccccc;stroke:none;stroke-width:0.836147;stroke-dasharray:none"
        id="ellipse543-9"
@@ -3487,16 +3255,6 @@
          y="251.82303">-</tspan></text>
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 62.008071,257.63192 -10.17625,1.3127"
-       id="path548-2"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927795,274.8915 10.8263,-8.50235"
-       id="path549-5"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 36.673535,251.60388 0.22376,4.71683 2.40321,2.72649"
        id="path550-0"
        sodipodi:nodetypes="ccc" />
@@ -3520,23 +3278,6 @@
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 30.229725,254.69482 v -1.37663"
        id="path555-3" />
-    <text
-       xml:space="preserve"
-       style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="41.210842"
-       y="260.69608"
-       id="text556-5"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan555-1"
-         style="stroke-width:0.761999"
-         x="41.210842"
-         y="260.69608">去氧核糖</tspan><tspan
-         sodipodi:role="line"
-         style="text-align:center;text-anchor:middle;stroke-width:0.761999"
-         x="41.210842"
-         y="263.18539"
-         id="tspan556-2" /></text>
     <path
        sodipodi:type="star"
        style="fill:none;stroke:#000000;stroke-width:2.70825;stroke-dasharray:none;stroke-dashoffset:0"
@@ -3558,37 +3299,6 @@
     <text
        xml:space="preserve"
        style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
-       x="43.685726"
-       y="254.27397"
-       id="text557-1"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan557-6"
-         style="fill:#000000;stroke-width:0.295249"
-         x="43.685726"
-         y="254.27397">O</tspan></text>
-    <path
-       id="path557-4"
-       style="fill:#cccccc;stroke:#000000;stroke-width:0.761999"
-       d="m 62.276691,266.43645 2.86871,-9.33604 9.00127,0.10187 6.334599,-7.04475 9.67273,2.0025 2.57798,8.95251 -6.37065,6.7398 -9.247139,-1.62535 -6.76953,5.54801 z"
-       sodipodi:nodetypes="cccccccccc" />
-    <ellipse
-       style="fill:#f9f9f9;stroke:none;stroke-width:0.564996;stroke-dasharray:none;stroke-dashoffset:0"
-       id="ellipse557-0"
-       cx="80.369919"
-       cy="263.41437"
-       rx="2.0069847"
-       ry="2.0451756" />
-    <ellipse
-       style="fill:#f9f9f9;stroke:none;stroke-width:0.564996;stroke-dasharray:none;stroke-dashoffset:0"
-       id="ellipse558-6"
-       cx="68.193909"
-       cy="253.08069"
-       rx="2.0069847"
-       ry="2.0451756" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
        x="66.810081"
        y="254.46107"
        id="text558-1"
@@ -3598,32 +3308,6 @@
          style="fill:#000000;stroke-width:0.295249"
          x="66.810081"
          y="254.46107">N</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
-       x="79.263817"
-       y="264.92679"
-       id="text559-9"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan559-8"
-         style="fill:#000000;stroke-width:0.295249"
-         x="79.263817"
-         y="264.92679">N</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
-       x="77.396179"
-       y="274.39355"
-       id="text561-4"
-       transform="scale(1.000284,0.99971609)"><tspan
-         sodipodi:role="line"
-         id="tspan561-1"
-         style="fill:#000000;stroke-width:0.295249"
-         x="77.396179"
-         y="274.39355">NH<tspan
-   style="font-size:2.35367px;baseline-shift:sub;stroke-width:0.295249"
-   id="tspan560-4">2</tspan></tspan></text>
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 61.610571,259.65842 2.96751,9.02472"
@@ -3631,26 +3315,9 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 60.710801,269.82492 -5.68022,-4.00601"
-       id="path578-8"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
        d="m 75.529471,255.3291 -5.59937,-1.22249"
        id="path579-0"
        sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 77.009361,272.05357 -3.18413,-1.74508"
-       id="path580-8"
-       sodipodi:nodetypes="cc" />
-    <rect
-       style="fill:#cccccc;stroke:#000000;stroke-width:0.565319;stroke-dasharray:none"
-       id="rect581-7"
-       width="84.338028"
-       height="32.759621"
-       x="19.952599"
-       y="243.9617" />
     <ellipse
        style="fill:#ececec;stroke:none;stroke-width:0.836147;stroke-dasharray:none"
        id="ellipse581-7"
@@ -3737,7 +3404,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 30.927795,274.8915 10.8263,-8.50235"
+       d="m 30.732657,275.91597 11.021438,-9.52682"
        id="path587-1"
        sodipodi:nodetypes="cc" />
     <path
@@ -3798,15 +3465,15 @@
     <text
        xml:space="preserve"
        style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
-       x="78.631531"
-       y="266.04779"
+       x="78.704689"
+       y="265.9136"
        id="text596-9"
        transform="scale(1.000284,0.99971609)"><tspan
          sodipodi:role="line"
          id="tspan596-9"
          style="fill:#000000;stroke-width:0.295249"
-         x="78.631531"
-         y="266.04779">N</tspan></text>
+         x="78.704689"
+         y="265.9136">N</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.62104px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#000000;stroke:#1a1a1a;stroke-width:0.295249;-inkscape-stroke:none"
@@ -3869,12 +3536,12 @@
          y="255.32013">O</tspan></text>
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 80.8505,254.30907 -3.368259,0.9194"
+       d="m 80.8505,254.30907 -3.05116,0.94379"
        id="path616-0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1a1a1a;stroke-width:0.761999;stroke-dasharray:none"
-       d="m 81.29333,255.34231 -3.368249,0.9194"
+       d="m 81.29333,255.34231 -3.173111,0.89501"
        id="path617-6"
        sodipodi:nodetypes="cc" />
     <text
@@ -3896,17 +3563,17 @@
          id="tspan628-9" /></text>
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 102.73767,270.31046 -15.93215,2.75875"
+       d="m 103.71336,270.21289 -16.90784,2.85632"
        id="path632-8"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="m 102.76815,261.04688 -19.18241,3.10153"
+       d="m 103.81702,260.65661 -20.23128,3.4918"
        id="path633-9"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:0.761999;stroke-dasharray:0.761999, 0.761999;stroke-dashoffset:0"
-       d="M 104.032,250.63506 84.79902,253.7934"
+       d="M 103.86125,250.68384 84.79902,253.7934"
        id="path634-7"
        sodipodi:nodetypes="cc" />
     <text
@@ -4035,36 +3702,212 @@
     <text
        xml:space="preserve"
        style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#f9f9f9;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="42.033169"
-       y="196.9789"
+       x="42.026272"
+       y="196.29675"
        id="text791-9"
        transform="scale(1.000284,0.99971609)"><tspan
          sodipodi:role="line"
          style="font-size:3.52778px;fill:#f9f9f9;stroke:none;stroke-width:0.761999"
-         x="42.033169"
-         y="196.9789"
+         x="42.026272"
+         y="196.29675"
          id="tspan789-7">核糖</tspan><tspan
          sodipodi:role="line"
          style="text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.761999"
-         x="42.033169"
-         y="200.00415"
+         x="42.026272"
+         y="199.32201"
          id="tspan791-6" /></text>
     <text
        xml:space="preserve"
        style="font-size:1.99145px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:start;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;fill:#f9f9f9;stroke:none;stroke-width:0.761999;stroke-dasharray:none"
-       x="41.764874"
-       y="262.42804"
+       x="42.026279"
+       y="261.83459"
        id="text791-9-1"
        transform="scale(1.000284,0.99971609)"><tspan
          sodipodi:role="line"
          style="font-size:3.52778px;fill:#f9f9f9;stroke:none;stroke-width:0.761999"
-         x="41.764874"
-         y="262.42804"
+         x="42.026279"
+         y="261.83459"
          id="tspan789-7-9">核糖</tspan><tspan
          sodipodi:role="line"
          style="text-align:center;text-anchor:middle;fill:#f9f9f9;stroke:none;stroke-width:0.761999"
-         x="41.764874"
-         y="265.45328"
+         x="42.026279"
+         y="264.85983"
          id="tspan791-6-6" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="35.810158"
+       y="29.682276"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="35.810158"
+         y="29.682276">5'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="42.931606"
+       y="39.624733"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="42.931606"
+         y="39.624733">3'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="35.580982"
+       y="62.621254"
+       id="text1-8"><tspan
+         sodipodi:role="line"
+         id="tspan1-2"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="35.580982"
+         y="62.621254">5'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="42.702431"
+       y="72.563713"
+       id="text2-4"><tspan
+         sodipodi:role="line"
+         id="tspan2-5"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="42.702431"
+         y="72.563713">3'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="35.550579"
+       y="95.484108"
+       id="text1-1"><tspan
+         sodipodi:role="line"
+         id="tspan1-5"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="35.550579"
+         y="95.484108">5'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="42.672028"
+       y="105.42656"
+       id="text2-2"><tspan
+         sodipodi:role="line"
+         id="tspan2-7"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="42.672028"
+         y="105.42656">3'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="35.753181"
+       y="128.08011"
+       id="text1-3"><tspan
+         sodipodi:role="line"
+         id="tspan1-22"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="35.753181"
+         y="128.08011">5'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="42.87463"
+       y="138.02257"
+       id="text2-1"><tspan
+         sodipodi:role="line"
+         id="tspan2-6"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="42.87463"
+         y="138.02257">3'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="35.627487"
+       y="160.85057"
+       id="text1-18"><tspan
+         sodipodi:role="line"
+         id="tspan1-9"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="35.627487"
+         y="160.85057">5'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="42.748936"
+       y="170.79303"
+       id="text2-27"><tspan
+         sodipodi:role="line"
+         id="tspan2-9"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="42.748936"
+         y="170.79303">3'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="35.578701"
+       y="193.59918"
+       id="text1-2"><tspan
+         sodipodi:role="line"
+         id="tspan1-3"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="35.578701"
+         y="193.59918">5'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="42.70015"
+       y="203.54164"
+       id="text2-3"><tspan
+         sodipodi:role="line"
+         id="tspan2-4"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="42.70015"
+         y="203.54164">3'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="35.809429"
+       y="226.54816"
+       id="text1-7"><tspan
+         sodipodi:role="line"
+         id="tspan1-4"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="35.809429"
+         y="226.54816">5'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="42.930878"
+       y="236.49062"
+       id="text2-277"><tspan
+         sodipodi:role="line"
+         id="tspan2-93"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="42.930878"
+         y="236.49062">3'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="35.453011"
+       y="259.2457"
+       id="text1-5"><tspan
+         sodipodi:role="line"
+         id="tspan1-0"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="35.453011"
+         y="259.2457">5'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:normal;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;fill:#f9f9f9;stroke-width:0.564999"
+       x="42.574459"
+       y="269.18817"
+       id="text2-28"><tspan
+         sodipodi:role="line"
+         id="tspan2-60"
+         style="font-size:2.82222px;fill:#1a1a1a;stroke-width:0.565"
+         x="42.574459"
+         y="269.18817">3'</tspan></text>
   </g>
 </svg>

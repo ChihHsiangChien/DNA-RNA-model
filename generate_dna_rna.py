@@ -133,7 +133,7 @@ def calculate_cell_dimensions(page_width, page_height, img_width, img_height, ro
     return cell_width, cell_height, start_x, start_y
 
 def create_a4_page(nucleotides_left, nucleotides_right, img_assets, draw_borders=True, rotate_right=True, 
-                   page_num=None, total_pages=None, left_indices=None, right_indices=None):
+                   page_num=None, total_pages=None, left_indices=None, right_indices=None, hide_borders=False):
     """
     Creates a single PIL Image representing an A4 page.
     Pastes left nucleotides in column 1 (normal) and right nucleotides in column 2.
@@ -157,6 +157,31 @@ def create_a4_page(nucleotides_left, nucleotides_right, img_assets, draw_borders
         resized_right = {k: v.transpose(Image.ROTATE_180).resize((cell_w, cell_h), Image.Resampling.LANCZOS) for k, v in img_assets.items()}
     else:
         resized_right = {k: v.resize((cell_w, cell_h), Image.Resampling.LANCZOS) for k, v in img_assets.items()}
+        
+    if hide_borders:
+        for k, img in resized_left.items():
+            draw_noborder = ImageDraw.Draw(img)
+            w, h = img.size
+            border_width = 7
+            is_rna = "RNA" in k or "U" in k
+            color = (204, 204, 204, 255) if is_rna else (255, 255, 255, 255)
+            
+            draw_noborder.rectangle([0, 0, w - 1, border_width - 1], fill=color)
+            draw_noborder.rectangle([0, h - border_width, w - 1, h - 1], fill=color)
+            draw_noborder.rectangle([0, 0, border_width - 1, h - 1], fill=color)
+            draw_noborder.rectangle([w - border_width, 0, w - 1, h - 1], fill=color)
+            
+        for k, img in resized_right.items():
+            draw_noborder = ImageDraw.Draw(img)
+            w, h = img.size
+            border_width = 7
+            is_rna = "RNA" in k or "U" in k
+            color = (204, 204, 204, 255) if is_rna else (255, 255, 255, 255)
+            
+            draw_noborder.rectangle([0, 0, w - 1, border_width - 1], fill=color)
+            draw_noborder.rectangle([0, h - border_width, w - 1, h - 1], fill=color)
+            draw_noborder.rectangle([0, 0, border_width - 1, h - 1], fill=color)
+            draw_noborder.rectangle([w - border_width, 0, w - 1, h - 1], fill=color)
     
     num_rows = max(len(nucleotides_left), len(nucleotides_right))
     
@@ -205,40 +230,24 @@ def create_a4_page(nucleotides_left, nucleotides_right, img_assets, draw_borders
     # Draw index numbers next to nucleotides if provided
     small_font = get_system_font(size=28)
     
-    # Left column numbering (placed in the left margin)
+    # Left column numbering (placed inside the cell relative to the nucleotide image)
     if left_indices is not None:
         for i, idx in enumerate(left_indices):
             if i >= num_rows:
                 break
             text = str(idx)
-            try:
-                bbox = draw.textbbox((0, 0), text, font=small_font)
-                text_w = bbox[2] - bbox[0]
-                text_h = bbox[3] - bbox[1]
-            except Exception:
-                text_w, text_h = draw.textsize(text, font=small_font)
-            
-            # Place to the left of the left cell
-            x_pos = start_x - text_w - 20
-            y_pos = start_y + i * cell_h + (cell_h - text_h) // 2
+            x_pos = start_x + 110
+            y_pos = start_y + i * cell_h + cell_h // 2
             draw.text((x_pos, y_pos), text, font=small_font, fill=(100, 100, 100))
             
-    # Right column numbering (placed in the right margin to avoid overlap)
+    # Right column numbering (placed inside the cell relative to the nucleotide image)
     if right_indices is not None:
         for i, idx in enumerate(right_indices):
             if i >= num_rows:
                 break
             text = str(idx)
-            try:
-                bbox = draw.textbbox((0, 0), text, font=small_font)
-                text_w = bbox[2] - bbox[0]
-                text_h = bbox[3] - bbox[1]
-            except Exception:
-                text_w, text_h = draw.textsize(text, font=small_font)
-                
-            # Place to the right of the right cell
-            x_pos = start_x + 2 * cell_w + 20
-            y_pos = start_y + i * cell_h + (cell_h - text_h) // 2
+            x_pos = start_x + cell_w + 110
+            y_pos = start_y + i * cell_h + cell_h // 2
             draw.text((x_pos, y_pos), text, font=small_font, fill=(100, 100, 100))
             
     # Draw page number at the bottom center if page_num is provided
@@ -337,6 +346,7 @@ def generate_scenario_1(img_assets, draw_borders=True):
         
     return generated_files
 
+
 def generate_scenario_2(sequence, img_assets, draw_borders=True, output_filename="dna_sequence_paired.pdf"):
     """
     Scenario 2: Given a DNA/RNA sequence, generate double-stranded pairing sheets.
@@ -348,6 +358,9 @@ def generate_scenario_2(sequence, img_assets, draw_borders=True, output_filename
     if not sequence:
         print("Error: Empty sequence provided.")
         return []
+        
+    # Calculate and print nucleotide requirements
+    print_nucleotide_requirements(sequence)
         
     # Detect DNA vs RNA
     is_rna = 'U' in sequence
@@ -377,6 +390,7 @@ def generate_scenario_2(sequence, img_assets, draw_borders=True, output_filename
     print(f"\n--- Generating Scenario 2 ({'RNA' if is_rna else 'DNA'} Paired Sequence: {sequence}) ---")
     print(f"Total bases: {total_len} | Total pages: {total_pages}")
     
+    # 1. Generate standard version
     for page_idx in range(total_pages):
         start = page_idx * ROWS
         end = min(start + ROWS, total_len)
@@ -399,12 +413,46 @@ def generate_scenario_2(sequence, img_assets, draw_borders=True, output_filename
         )
         pages.append(page_img)
         
+    generated_files = []
     if pages:
         pages[0].save(output_filename, save_all=True, append_images=pages[1:])
         print(f"Generated: {output_filename}")
-        return [output_filename]
+        generated_files.append(output_filename)
         
-    return []
+    # 2. Generate border-hidden version
+    if output_filename.lower().endswith(".pdf"):
+        output_noborder = output_filename[:-4] + "_noborder.pdf"
+    else:
+        output_noborder = output_filename + "_noborder.pdf"
+        
+    pages_noborder = []
+    for page_idx in range(total_pages):
+        start = page_idx * ROWS
+        end = min(start + ROWS, total_len)
+        
+        p_left = left_seq[start:end]
+        p_right = right_seq[start:end]
+        left_indices = list(range(start + 1, end + 1))
+        
+        page_img = create_a4_page(
+            p_left, p_right, img_assets, 
+            draw_borders=draw_borders, 
+            rotate_right=True, 
+            page_num=page_idx + 1, 
+            total_pages=total_pages,
+            left_indices=left_indices,
+            right_indices=None,
+            hide_borders=True
+        )
+        pages_noborder.append(page_img)
+        
+    if pages_noborder:
+        pages_noborder[0].save(output_noborder, save_all=True, append_images=pages_noborder[1:])
+        print(f"Generated border-hidden: {output_noborder}")
+        generated_files.append(output_noborder)
+        
+    return generated_files
+
 
 def generate_scenario_3(sequence, img_assets, draw_borders=True, output_filename="single_strand_sequence.pdf"):
     """
@@ -446,6 +494,7 @@ def generate_scenario_3(sequence, img_assets, draw_borders=True, output_filename
     print(f"\n--- Generating Scenario 3 ({'RNA' if is_rna else 'DNA'} Single Strand Sequence: {sequence}) ---")
     print(f"Total bases: {total_len} | Total pages: {total_pages}")
     
+    # 1. Generate standard version
     pages = []
     for page_idx in range(total_pages):
         page_start = page_idx * bases_per_page
@@ -479,12 +528,55 @@ def generate_scenario_3(sequence, img_assets, draw_borders=True, output_filename
         )
         pages.append(page_img)
         
+    generated_files = []
     if pages:
         pages[0].save(output_filename, save_all=True, append_images=pages[1:])
         print(f"Generated: {output_filename}")
-        return [output_filename]
+        generated_files.append(output_filename)
         
-    return []
+    # 2. Generate border-hidden version
+    if output_filename.lower().endswith(".pdf"):
+        output_noborder = output_filename[:-4] + "_noborder.pdf"
+    else:
+        output_noborder = output_filename + "_noborder.pdf"
+        
+    pages_noborder = []
+    for page_idx in range(total_pages):
+        page_start = page_idx * bases_per_page
+        
+        left_start = page_start
+        left_end = min(left_start + ROWS, total_len)
+        p_left = full_seq[left_start:left_end]
+        left_indices = list(range(left_start + 1, left_end + 1))
+        
+        right_start = page_start + ROWS
+        right_end = min(right_start + ROWS, total_len)
+        
+        if right_start < total_len:
+            p_right = full_seq[right_start:right_end]
+            right_indices = list(range(right_start + 1, right_end + 1))
+        else:
+            p_right = []
+            right_indices = None
+            
+        page_img = create_a4_page(
+            p_left, p_right, img_assets, 
+            draw_borders=draw_borders, 
+            rotate_right=False, 
+            page_num=page_idx + 1, 
+            total_pages=total_pages,
+            left_indices=left_indices,
+            right_indices=right_indices,
+            hide_borders=True
+        )
+        pages_noborder.append(page_img)
+        
+    if pages_noborder:
+        pages_noborder[0].save(output_noborder, save_all=True, append_images=pages_noborder[1:])
+        print(f"Generated border-hidden: {output_noborder}")
+        generated_files.append(output_noborder)
+        
+    return generated_files
 
 def read_multiline_sequence(prompt, default_file=None):
     print(prompt)
@@ -526,10 +618,73 @@ def read_multiline_sequence(prompt, default_file=None):
             break
     return "".join(lines)
 
+def print_nucleotide_requirements(sequence):
+    """
+    Calculates and prints the nucleotide requirements for:
+    1. DNA replication (from 1 dsDNA to 2 dsDNA)
+    2. Transcription to mRNA (1 single-stranded mRNA copy)
+    """
+    # Clean sequence
+    seq = "".join(sequence.split()).upper()
+    if not seq:
+        return
+        
+    # Check if it's RNA or DNA
+    is_rna = 'U' in seq
+    if is_rna:
+        print("\n" + "=" * 55)
+        print("        [RNA Sequence Detected]")
+        print("=" * 55)
+        print(f"Sequence Length: {len(seq)} nt")
+        print(f"Base composition: A={seq.count('A')}, U={seq.count('U')}, C={seq.count('C')}, G={seq.count('G')}")
+        print("Replication / Transcription calculations are skipped for RNA.")
+        print("=" * 55 + "\n")
+        return
+
+    # DNA replication requirements (1 dsDNA -> 2 dsDNA)
+    count_A = seq.count('A')
+    count_T = seq.count('T')
+    count_C = seq.count('C')
+    count_G = seq.count('G')
+    
+    rep_A = count_A + count_T
+    rep_T = count_A + count_T
+    rep_C = count_C + count_G
+    rep_G = count_C + count_G
+    
+    # mRNA transcription requirements (transcribes 1 single-stranded mRNA copy)
+    tx_A = count_A
+    tx_U = count_T
+    tx_C = count_C
+    tx_G = count_G
+    
+    print("\n" + "=" * 55)
+    print("        [Nucleotide Requirements Calculation]")
+    print("=" * 55)
+    print(f"Input DNA Sequence Length: {len(seq)} bp")
+    print(f"Base composition (Coding Strand): A={count_A}, T={count_T}, C={count_C}, G={count_G}")
+    print("-" * 55)
+    print("1. DNA Replication (1 dsDNA -> 2 dsDNA):")
+    print(f"   To replicate this double-stranded DNA molecule, you need:")
+    print(f"   - Adenine (A)  : {rep_A}")
+    print(f"   - Thymine (T)  : {rep_T}")
+    print(f"   - Cytosine (C) : {rep_C}")
+    print(f"   - Guanine (G)  : {rep_G}")
+    print(f"   Total dNTPs needed: {rep_A + rep_T + rep_C + rep_G}")
+    print("-" * 55)
+    print("2. mRNA Transcription (DNA -> 1 mRNA strand):")
+    print(f"   To transcribe one mRNA copy of this coding strand, you need:")
+    print(f"   - Adenine (A)  : {tx_A}")
+    print(f"   - Uracil (U)   : {tx_U}")
+    print(f"   - Cytosine (C) : {tx_C}")
+    print(f"   - Guanine (G)  : {tx_G}")
+    print(f"   Total NTPs needed: {tx_A + tx_U + tx_C + tx_G}")
+    print("=" * 55 + "\n")
+
 def main():
     parser = argparse.ArgumentParser(description="DNA-RNA Nucleotide A4 PDF Generator")
     parser.add_argument("--mode", choices=["1", "2", "3", "5", "all", "combo", "interactive"], default="interactive",
-                        help="Mode: 1=Scenario 1 (Full sheets), 2=Scenario 2 (Paired), 3=Scenario 3 (Single Strand), 5=Combo (DNA ds, DNA ss, mRNA ss), all=Run all, interactive=Interactive menu")
+                        help="Mode: 1=Scenario 1 (Full sheets), 2=Scenario 2 (Paired), 3=Scenario 3 (Single Strand), all=Generate All (Full sheets, DNA ds, DNA ss, mRNA ss), combo=Combo only, interactive=Interactive menu")
     parser.add_argument("--seq", type=str, default="", help="DNA/RNA sequence for Scenarios 2 & 3 (e.g. ATCGATCG)")
     parser.add_argument("--no-borders", action="store_true", help="Disable cell borders/cutting lines")
     parser.add_argument("--output", type=str, default="", help="Custom output filename")
@@ -540,30 +695,23 @@ def main():
     img_assets = load_nucleotide_images()
     draw_borders = not args.no_borders
     mode = args.mode
+    if mode == "5":
+        mode = "combo"
     
     if mode == "interactive":
         print("=" * 55)
         print("        DNA-RNA Nucleotide PDF Layout Generator")
         print("=" * 55)
         print("1. Scenario 1: Generate full A4 sheets for each base (DNA-A/T/C/G & RNA-A/U/C/G)")
-        print("2. Scenario 2: Generate double-stranded pairing A4 sheets (rotated complement)")
-        print("3. Scenario 3: Generate single-stranded sequential A4 sheets (left -> right col)")
-        print("4. Generate All Scenarios (Scenario 1, 2, 3)")
-        print("5. Generate DNA ds, DNA ss, & mRNA ss from a DNA sequence (Combo)")
-        print("6. Exit")
+        print("2. Generate All (Full Sheets + DNA ds + DNA ss + mRNA ss)")
+        print("3. Exit")
         
-        choice = input("\nEnter your choice (1-6): ").strip()
+        choice = input("\nEnter your choice (1-3): ").strip()
         if choice == "1":
             mode = "1"
-        elif choice == "2":
-            mode = "2"
-        elif choice == "3":
-            mode = "3"
-        elif choice == "4" or choice == "all":
+        elif choice == "2" or choice == "all":
             mode = "all"
-        elif choice == "5" or choice == "combo":
-            mode = "combo"
-        elif choice == "6":
+        elif choice == "3":
             print("Exiting...")
             sys.exit(0)
         else:
@@ -577,7 +725,7 @@ def main():
         if not seq:
             # Determine prompt based on mode
             if mode == "all":
-                prompt = "\nEnter DNA/RNA Sequence for Scenarios 2 & 3:"
+                prompt = "\nEnter DNA Sequence (e.g. ATCGATCG) to generate All (Full Sheets + DNA ds + DNA ss + mRNA ss):"
             elif mode == "combo":
                 prompt = "\nEnter DNA Sequence (e.g. ATCGATCG) to generate DNA ds, DNA ss & mRNA ss:"
             elif mode == "2":
@@ -596,38 +744,71 @@ def main():
                 
             seq = read_multiline_sequence(prompt, default_file)
             
-    if mode == "1" or mode == "all":
+    if mode == "1":
         generate_scenario_1(img_assets, draw_borders)
         
-    if mode == "2" or mode == "all":
+    if mode == "2":
         output_file = args.output if args.output else "dna_sequence_paired.pdf"
         generate_scenario_2(seq, img_assets, draw_borders, output_file)
         
-    if mode == "3" or mode == "all":
+    if mode == "3":
         output_file = args.output if args.output else "single_strand_sequence.pdf"
         generate_scenario_3(seq, img_assets, draw_borders, output_file)
-
+ 
     if mode == "combo":
         # Generate DNA ds (double-stranded pairing)
         dna_paired = args.output if args.output else "dna_sequence_paired.pdf"
+        dna_paired_noborder = dna_paired[:-4] + "_noborder.pdf" if dna_paired.lower().endswith(".pdf") else dna_paired + "_noborder.pdf"
         print("\n=== Generating 1/3: DNA Double-Stranded (Paired) ===")
         generate_scenario_2(seq, img_assets, draw_borders, dna_paired)
-
+ 
         # Generate DNA ss (single-stranded sequential)
         dna_single = "dna_sequence_single.pdf"
+        dna_single_noborder = "dna_sequence_single_noborder.pdf"
         print("\n=== Generating 2/3: DNA Single-Stranded ===")
         generate_scenario_3(seq, img_assets, draw_borders, dna_single)
-
+ 
         # Generate mRNA ss (single-stranded sequential, replacing T with U)
         mrna_seq = seq.upper().replace('T', 'U')
         mrna_single = "mrna_sequence_single.pdf"
+        mrna_single_noborder = "mrna_sequence_single_noborder.pdf"
         print("\n=== Generating 3/3: mRNA Single-Stranded ===")
         generate_scenario_3(mrna_seq, img_assets, draw_borders, mrna_single)
         
         print("\n=== Combo Generation Completed! ===")
-        print(f"1. DNA Paired (ds): {dna_paired}")
-        print(f"2. DNA Single (ss): {dna_single}")
-        print(f"3. mRNA Single (ss): {mrna_single}")
+        print(f"1. DNA Paired (ds): {dna_paired} & {dna_paired_noborder}")
+        print(f"2. DNA Single (ss): {dna_single} & {dna_single_noborder}")
+        print(f"3. mRNA Single (ss): {mrna_single} & {mrna_single_noborder}")
+
+    if mode == "all":
+        # 1. Full Sheets
+        print("\n=== Generating Part 1/4: Full Sheets (Scenario 1) ===")
+        generate_scenario_1(img_assets, draw_borders)
+
+        # 2. DNA ds (paired)
+        dna_paired = args.output if args.output else "dna_sequence_paired.pdf"
+        dna_paired_noborder = dna_paired[:-4] + "_noborder.pdf" if dna_paired.lower().endswith(".pdf") else dna_paired + "_noborder.pdf"
+        print("\n=== Generating Part 2/4: DNA Double-Stranded (Paired) ===")
+        generate_scenario_2(seq, img_assets, draw_borders, dna_paired)
+
+        # 3. DNA ss (single-stranded sequential)
+        dna_single = "dna_sequence_single.pdf"
+        dna_single_noborder = "dna_sequence_single_noborder.pdf"
+        print("\n=== Generating Part 3/4: DNA Single-Stranded ===")
+        generate_scenario_3(seq, img_assets, draw_borders, dna_single)
+
+        # 4. mRNA ss (single-stranded sequential, replacing T with U)
+        mrna_seq = seq.upper().replace('T', 'U')
+        mrna_single = "mrna_sequence_single.pdf"
+        mrna_single_noborder = "mrna_sequence_single_noborder.pdf"
+        print("\n=== Generating Part 4/4: mRNA Single-Stranded ===")
+        generate_scenario_3(mrna_seq, img_assets, draw_borders, mrna_single)
+        
+        print("\n=== All Generations Completed! ===")
+        print("1. Full Sheets Generated.")
+        print(f"2. DNA Paired (ds): {dna_paired} & {dna_paired_noborder}")
+        print(f"3. DNA Single (ss): {dna_single} & {dna_single_noborder}")
+        print(f"4. mRNA Single (ss): {mrna_single} & {mrna_single_noborder}")
 
 if __name__ == "__main__":
     main()
